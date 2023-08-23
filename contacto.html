@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Tienda Muebles</title>
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="nombre-sitio">Tienda <span>Muebles</span></h1>
+    </header>
+
+    <!-- Menú de Navegación -->
+    <div class="contenedor-navegacion">
+      <nav class="nav-principal contenedor">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="blog.html">Blog</a>
+        <a href="galeria.html">Galería</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+
+    <!-- Contacto -->
+    <main class="contenido-principal contenedor">
+      <h2 class="text-center">Contacto</h2>
+
+      <form class="formulario">
+        <!-- Datos -->
+        <fieldset>
+          <legend>Tus Datos</legend>
+          <div class="campo">
+            <label for="nombre">Nombre: </label>
+            <input id="nombre" type="text" placeholder="Tu Nombre" />
+          </div>
+
+          <div class="campo">
+            <label for="asunto">Asunto: </label>
+            <input id="asunto" type="text" placeholder="El Asunto" />
+          </div>
+
+          <div class="campo">
+            <label for="email">Email: </label>
+            <input id="email" type="email" placeholder="Tu Email" />
+          </div>
+
+          <div class="campo">
+            <label for="telefono">Teléfono: </label>
+            <input id="telefono" type="tel" placeholder="Tu Teléfono" />
+          </div>
+
+          <div class="campo">
+            <label for="fecha">Fecha: </label>
+            <input id="fecha" type="datetime-local" />
+          </div>
+
+          <div class="campo">
+            <label for="mensaje">Mensaje: </label>
+            <textarea rows="5" cols="20" placeholder="Escribe un mensaje aquí..."></textarea>
+          </div>
+        </fieldset>
+
+        <!-- País -->
+        <fieldset>
+          <legend>País</legend>
+
+          <div class="campo">
+            <label for="pais">País:</label>
+
+            <select id="pais">
+              <option value="">-- Seleccionar --</option>
+              <option value="España">España</option>
+              <option value="Portugal">Portugal</option>
+              <option value="Francia">Francia</option>
+              <option value="Italia">Italia</option>
+              <option value="Alemania">Alemania</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <!-- Información Extra -->
+        <fieldset>
+          <legend>Información Extra</legend>
+
+          <div class="campo">
+            <label for="cliente">Cliente</label>
+            <input id="cliente" name="tipo" type="radio" value="cliente" />
+          </div>
+
+          <div class="campo">
+            <label for="proveedor">Proveedor</label>
+            <input id="proveedor" name="tipo" type="radio" value="proveedor" />
+          </div>
+
+          <div class="campo">
+            <label for="interes">Interés:</label>
+
+            <input list="interes" name="interes" />
+            <datalist id="interes">
+                <option value="Cocina">Cocina</option>
+                <option value="Exterior">Exterior</option>
+                <option value="Oficina">Oficina</option>
+                <option value="Habitación">Habitación</option>
+            </datalist>
+          </div>
+        </fieldset>
+
+        <input type="submit" class="btn" value="Enviar" />
+      </form>
+    </main>
+
+    <footer class="site-footer">
+      <div class="grid-footer contenedor">
+        <!-- Categorías -->
+        <div>
+          <h3>Categorías</h3>
+
+          <nav class="footer-menu">
+            <a href="#">Cocina</a>
+            <a href="#">Oficina</a>
+            <a href="#">Jardín</a>
+            <a href="#">Cochera</a>
+            <a href="#">Dormitorios</a>
+          </nav>
+        </div>
+
+        <!-- Sobre Nosotros -->
+        <div>
+          <h3>Sobre Nosotros</h3>
+
+          <nav class="footer-menu">
+            <a href="#">Nuestra Historia</a>
+            <a href="#">Misión, Visión y Valores</a>
+            <a href="#">Carreras</a>
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Términos de Servicio</a>
+          </nav>
+        </div>
+
+        <!-- Soporte -->
+        <div>
+          <h3>Soporte</h3>
+
+          <nav class="footer-menu">
+            <a href="#">Preguntas Frecuentes</a>
+            <a href="#">Ayuda en Línea</a>
+            <a href="#">Confianza y Seguridad</a>
+          </nav>
+        </div>
+      </div>
+
+      <p class="copyright">
+        Todos los derechos reservados - Gonzalo Sanz &copy;2023
+      </p>
+    </footer>
+  </body>
+</html>
